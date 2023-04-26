@@ -1,0 +1,16 @@
+.tag {
+  background: #000000;
+  border: 0.660714px solid #ffffff;
+  border-radius: 66.0714px;
+  padding: 11px 18px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  min-width: max-content;
+}
+
+.activeTag {
+  background: #1daeec;
+  padding: 11px 34px;
+}

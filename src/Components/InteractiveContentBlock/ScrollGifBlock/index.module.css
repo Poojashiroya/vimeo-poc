@@ -1,0 +1,72 @@
+.scrollGifContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.scrollGifContainer > div:first-of-type {
+  height: fit-content;
+  max-height: fit-content;
+  padding: 73px 90px 55px;
+  box-sizing: content-box;
+}
+
+.cardImgContainer {
+  display: flex;
+  height: fit-content;
+}
+
+.cardsContainer {
+  height: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imageContainer {
+  max-width: 1030px;
+  width: max-content;
+  max-height: 1913px;
+}
+
+/* media query more than 1440px screen */
+@media only screen and (min-width: 1441px) {
+  .cardImgContainer {
+    justify-content: center;
+  }
+}
+
+/* media query between 769px to 1365px screen */
+@media only screen and (min-width: 769px) and (max-width: 1365px) {
+  .scrollGifContainer > div:first-of-type {
+    padding: 40px 24px;
+  }
+
+  .imageContainer{
+    max-width: 500px;
+    max-height: 800px;
+  }
+}  
+
+/* media query less than 767px screen */
+@media only screen and (max-width: 768px) {
+  .scrollGifContainer > div:first-of-type {
+    padding: 24px 16px;
+  }
+
+  .cardImgContainer {
+    flex-direction: column;
+  }
+
+  .cardsContainer {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 24px 0 24px 16px
+  }
+
+  .imageContainer {
+    max-width: 100%;
+    max-height: 300px;
+    align-self: center;
+  }
+}

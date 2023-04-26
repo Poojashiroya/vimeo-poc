@@ -1,0 +1,97 @@
+.logoWallContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 90px 58px;
+  background: #d9d9d9;
+}
+
+.logoWallContainer > div:first-of-type {
+  padding: 0 0 51px;
+  height: fit-content;
+}
+
+.logoWallContainer > div:first-of-type > h2 {
+  max-width: 623px;
+  text-align: center;
+}
+
+.logoWallContainer > div:first-of-type > p {
+  max-width: 843px;
+  text-align: center;
+}
+
+.logosContainer {
+  max-width: 1276px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logosContainer > * {
+  margin: 0 20px 35px 0;
+}
+
+.logosContainer > *:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.logosContainer > *:nth-of-type(6n-5) {
+  margin-left: 96px;
+}
+
+/* media query between 769px to 1365px screen */
+@media only screen and (min-width: 769px) and (max-width: 1365px) {
+  .logoWallContainer {
+    padding: 40px 24px;
+  }
+
+  .logosContainer > * {
+    margin: 0 20px 35px 0;
+  }
+
+  .logosContainer > *:nth-of-type(2n) {
+    margin-right: 0px;
+  }
+
+  .logosContainer > *:nth-of-type(3n) {
+    margin-right: 20px;
+  }
+
+  .logosContainer > *:nth-of-type(6n-5) {
+    margin-left: 0px;
+  }
+}
+
+/* media query less than 767px screen */
+@media only screen and (max-width: 768px) {
+  .logoWallContainer {
+    padding: 24px 16px;
+  }
+
+  .logoWallContainer > div:first-of-type {
+    padding: 0;
+  }
+
+  .logoWallContainer > div:first-of-type > h2,
+  .logoWallContainer > div:first-of-type > p {
+    max-width: 100%;
+  }
+
+  .logosContainer {
+    max-width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .logosContainer > * {
+    margin: 12px 8px;
+  }
+
+  .logosContainer > *:nth-of-type(6n-5) {
+    margin-left: 0px;
+  }
+}

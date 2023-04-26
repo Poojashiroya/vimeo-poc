@@ -1,0 +1,15 @@
+.link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-decoration: underline;
+  color: #7c7c7c;
+}
+
+/* media query less than 767px screen */
+@media only screen and (max-width: 768px) {
+  .link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

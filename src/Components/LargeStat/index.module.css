@@ -1,0 +1,213 @@
+.largeStat {
+  background: #d9d9d9;
+}
+
+.largeStatContainer {
+  padding: 68px 96px 124px 146px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.roiContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #fff;
+  margin-right: 53px;
+}
+
+.roi {
+  display: flex;
+}
+
+.roi h2 {
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 244px;
+}
+
+.roi p {
+  margin: 54px 0 0 27px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 44px;
+}
+
+.roiDesc {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  max-width: 492px;
+  margin: 0 0 68px 4px;
+}
+
+.companyLogo {
+  min-width: 309px;
+  padding: 27px;
+  background: #b4b4b4;
+  margin-left: 8px;
+  width: fit-content;
+}
+
+.rightContentContainer {
+  display: flex;
+  min-height: max-content;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 55px 0 17px;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: right;
+  color: #7c7c7c;
+}
+
+.user {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 37px;
+}
+
+.user > img {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+}
+
+.userName {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 44px;
+  color: #7c7c7c;
+  margin-left: 26px;
+}
+
+/* media query more than 1440px screen */
+@media only screen and (min-width: 1441px) {
+  .largeStatContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+/* media query between 769px to 1365px screen */
+@media only screen and (min-width: 769px) and (max-width: 1365px) {
+  .largeStatContainer {
+    padding: 40px 24px;
+  }
+
+  .roiContainer {
+    margin-right: 32px;
+  }
+
+  .roi h2 {
+    font-size: 120px;
+    line-height: 150px;
+  }
+
+  .roi p {
+    font-size: 50px;
+    line-height: 32px;
+    margin: 24px 0 0 12px;
+  }
+
+  .roiDesc {
+    font-size: 28px;
+    line-height: 32px;
+    max-width: 100%;
+    margin: 0 0 40px 0;
+  }
+
+  .companyLogo {
+    margin-left: 0;
+  }
+
+  .rightContentContainer {
+    margin: 0;
+  }
+
+  .desc {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .user {
+    margin-top: 24px;
+  }
+
+  .user > img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .userName {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 12px;
+  }
+}
+
+/* media query less than 767px screen */
+@media only screen and (max-width: 768px) {
+  .largeStatContainer{
+    padding: 24px 16px;
+    flex-direction: column;
+  }
+
+  .roiContainer{
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .roi h2 {
+    font-size: 82px;
+    line-height: 90px;
+  }
+
+  .roi p {
+    margin: 24px 0 0 12px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .roiDesc {
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 100%;
+    margin: 0 0 24px 0;
+  }
+
+  .companyLogo {
+    width: fit-content;
+    padding: 12px;
+    margin-left: 0;
+  }
+
+  .rightContentContainer {
+    margin: 24px 0 12px;
+  }
+
+  .desc {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .user{
+    margin-top: 24px;
+    justify-content: center;
+  }
+
+  .userName {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 12px;
+  }
+}

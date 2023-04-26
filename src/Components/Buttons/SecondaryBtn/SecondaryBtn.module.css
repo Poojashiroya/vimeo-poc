@@ -1,0 +1,23 @@
+.secondaryBtn {
+  color: #fff;
+  background-color: #878787;
+  padding: 16px 26px 20px;
+  min-width: 231px;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 6px;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+/* media query less than 767px screen */
+@media only screen and (max-width: 768px) {
+  .secondaryBtn {
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+    padding: 8px;
+  }
+}

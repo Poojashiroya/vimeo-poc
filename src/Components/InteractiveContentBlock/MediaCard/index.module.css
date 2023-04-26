@@ -1,0 +1,267 @@
+.mediaCardContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+}
+
+.mediaContainer {
+  max-height: 663px;
+  height: 663px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.mediaCardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 0 31px 62px;
+  align-items: center;
+  margin-top: -100px;
+  z-index: 1;
+}
+
+.btnsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 33px;
+  z-index: 2;
+}
+
+.btnsWrapper > a:first-of-type {
+  margin-right: 17px;
+}
+
+/* left alignments cards */
+.leftAlignMediaCardContainer {
+  padding: 101px 0 54px 74px;
+  min-height: 911px;
+}
+
+.leftAlignCardMedia {
+  left: calc(100% - 880px);
+  top: 54px;
+  max-width: 880px;
+  width: 880px;
+  height: 803px;
+  max-height: 803px;
+}
+
+.leftAlignCardMedia > div:first-of-type {
+  padding: 0;
+  max-height: max-content;
+  height: fit-content;
+  max-width: 526px;
+}
+
+.leftAlignMediaDescription {
+  margin-top: 15px;
+}
+
+.leftAlignMediaCardsWrapper {
+  margin-top: 53px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.leftAlignBtnsWrapper {
+  width: 673px;
+  align-self: flex-start;
+}
+
+/* right Align cards */
+.rightAlignMediaCardContainer {
+  padding: 91px 87px 155px;
+}
+
+.rightAlignCardMedia {
+  left: 87px;
+  top: 55px;
+  width: 502px;
+  height: 915px;
+  max-width: 502px;
+  max-height: 915px;
+}
+
+.rightAlignMediaContent {
+  padding: 0;
+  align-self: flex-end;
+  height: fit-content;
+  max-height: fit-content;
+  width: 673px;
+  max-width: 673px;
+}
+
+.rightAlignMediaCardsWrapper {
+  margin-top: 14px;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 63px;
+}
+
+.rightAlignBtnsWrapper {
+  width: 673px;
+  align-self: end;
+}
+
+/* media query more than 1440px screen */
+@media only screen and (min-width: 1441px) {
+  .mediaCardsWrapper {
+    align-self: center;
+    width: auto;
+  }
+
+  .rightAlignMediaCardsWrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .rightAlignBtnsWrapper {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* media query between 769px to 1365px screen */
+@media only screen and (min-width: 769px) and (max-width: 1365px) {
+  .mediaCardsWrapper {
+    padding: 0;
+    margin: -90px 24px 0 16px;
+  }
+
+  /* left alignments cards */
+  .leftAlignMediaCardContainer {
+    padding: 40px 24px 0;
+  }
+
+  .leftAlignMediaCardsWrapper {
+    margin: 24px 0 0;
+  }
+
+  /* right Align cards */
+.rightAlignMediaCardContainer {
+  padding: 40px 24px;
+  height: 970px;
+  max-height: 970px;
+}
+
+.rightAlignCardMedia {
+  left: 24px;
+}
+
+.rightAlignMediaContent {
+  width: 515px;
+  min-width: 515px;
+}
+
+.rightAlignMediaCardsWrapper {
+  margin-top: 14px;
+}
+
+.rightAlignBtnsWrapper {
+  width: 595px;
+}
+}
+
+/* media query less than 767px screen */
+@media only screen and (max-width: 768px) {
+  .mediaCardsWrapper {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 0 24px 16px;
+    margin-top: 12px;
+  }
+
+  .mediaContainer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+  }
+
+  .mediaCardsWrapper > * {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .btnsWrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 16px;
+  }
+
+  .btnsWrapper > a:first-of-type {
+    margin-right: 0;
+  }
+
+  .btnsWrapper > a:last-of-type {
+    margin-top: 12px;
+  }
+
+  /* left alignments cards */
+  .leftAlignMediaCardContainer {
+    padding: 24px 0 0 0;
+    min-height: max-content;
+  }
+
+  .leftAlignMediaCardsWrapper {
+    margin-top: 12px;
+    flex-direction: row;
+  }
+
+  .leftAlignMediaCardsWrapper > * {
+    margin-right: 12px;
+  }
+
+  .leftAlignCardMedia {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    max-height: 200px;
+    left: 0;
+    top: 0;
+  }
+
+  .leftAlignBtnsWrapper {
+    width: 100%;
+  }
+
+  /* right Align cards */
+  .rightAlignMediaCardContainer {
+    padding: 24px 0;
+  }
+
+  .rightAlignCardMedia {
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    max-height: 200px;
+  }
+
+  .rightAlignMediaContent {
+    width: 100%;
+    max-width: 100%;
+    align-self: flex-start;
+  }
+
+  .rightAlignMediaCardsWrapper {
+    padding-left: 8px;
+    flex-direction: row;
+  }
+
+  .rightAlignBtnsWrapper {
+    width: 100%;
+    align-self: flex-start;
+  }
+}
