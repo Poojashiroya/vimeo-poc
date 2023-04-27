@@ -7,7 +7,7 @@ type Props = {
     alignment: string,
     mediaTitle: string,
     mediaDesc: string,
-    mediaSubDesc: string
+    mediaSubDesc: string.notRequired,
 }
 
 /**

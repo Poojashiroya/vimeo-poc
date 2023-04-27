@@ -18,14 +18,13 @@
 
 .cardTitle {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 28px;
+  line-height: 33px;
 }
 
 .cardDesc{
     font-size: 18px;
 line-height: 27px;
-text-align: center;
 display: flex;
 align-items: center;
 margin: 29px 0 21px;

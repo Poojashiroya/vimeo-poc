@@ -10,6 +10,7 @@
   text-align: center;
   border: none;
   outline: none;
+  height: fit-content;
 }
 
 /* media query less than 767px screen */

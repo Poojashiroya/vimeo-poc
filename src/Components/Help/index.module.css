@@ -18,7 +18,7 @@
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 57px;
+  margin: 57px 0 21px;
 }
 
 .cardsContainer > * {
@@ -28,3 +28,40 @@
 .cardsContainer > *:last-child{
   margin-right: 0;
 }
+
+.helpDescriptionContainer {
+  width: 100%;
+  background: #fff;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 93px 71px  66px;
+  border: 1px solid #FFFFFF;
+border-radius: 8px;
+}
+
+.helpDescriptionContainer  > div:first-of-type {
+  width: fit-content;
+  max-width: fit-content;
+}
+
+.helpDescriptionContainer  > div:first-of-type > h2 {
+  max-width: 716px;
+  width: max-content;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.helpDescriptionContainer  > div:first-of-type > p {
+  max-width: 716px;
+  width: max-content;
+  line-height: 32px;
+  color: #000000;
+  margin-top:33px;
+}
+
+
+.helpDescriptionContainer > a {
+  align-self: end;
+} 
