@@ -1,0 +1,39 @@
+.linkContainer {
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 8px;
+  padding: 57px 40px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+  max-width: 420px;
+  height: auto;
+}
+
+.linkImg {
+  width: 38px;
+  height: 38px;
+  color: white;
+}
+
+.linkText {
+  color: #fff;
+  margin-top: 44px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+/* media query less than 767px screen */
+@media only screen and (max-width: 768px) {
+    .linkContainer {
+        max-width: 100%;
+        width: 100%;
+        padding: 24px;
+    }
+
+    .linkText {
+        margin-top: 24px;
+    }
+}

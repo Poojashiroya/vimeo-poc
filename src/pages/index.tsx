@@ -9,6 +9,8 @@ import LargeStat from '@/Components/LargeStat';
 import SocialValidation from '@/Components/SocialValidation';
 import LogoBanner from '@/Components/LogoBanner';
 import LogoWall from '@/Components/LogoWall';
+import QuickStart from '@/Components/QuickStart';
+import Help from '@/Components/Help';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -77,6 +79,8 @@ export default function Home() {
         <SocialValidation />
         <LogoBanner />
         <LogoWall />
+        <QuickStart />
+        <Help />
       </main>
     </>
   )

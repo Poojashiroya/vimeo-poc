@@ -1,0 +1,42 @@
+.cardContainer {
+  background: #d9d9d9;
+  border-radius: 8px;
+  width: 407px;
+  max-width: 407px;
+}
+
+.img { 
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 200px;
+}
+
+.cardContent {
+  padding: 0 15px 31px 32px;
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.cardDesc{
+    font-size: 18px;
+line-height: 27px;
+text-align: center;
+display: flex;
+align-items: center;
+margin: 29px 0 21px;
+}
+
+.cardLink {
+    font-weight: 700;
+font-size: 18px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-decoration-line: underline;
+color: #000000;
+}
