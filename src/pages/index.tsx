@@ -11,6 +11,7 @@ import LogoBanner from '@/Components/LogoBanner';
 import LogoWall from '@/Components/LogoWall';
 import QuickStart from '@/Components/QuickStart';
 import Help from '@/Components/Help';
+import Filters from '@/Components/Filters';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -81,6 +82,7 @@ export default function Home() {
         <LogoWall />
         <QuickStart />
         <Help />
+        <Filters />
       </main>
     </>
   )
