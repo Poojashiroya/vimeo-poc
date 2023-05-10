@@ -1,0 +1,508 @@
+.header {
+  width: 100%;
+  position: relative;
+}
+
+.headerContent {
+  width: 100%;
+  max-width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  padding: 2px 20px 0 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo {
+  width: 172px;
+  height: 96px;
+}
+
+.navigationContainer {
+  display: flex;
+}
+
+.navigationList {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  display: flex;
+  margin: 0 53px 0 0;
+}
+
+.listItem:last-of-type {
+  margin-right: 0;
+}
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+}
+
+.loginContainer > a:last-of-type {
+  padding: 13px 15px;
+  width: fit-content;
+  min-width: fit-content;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.navigationItem {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #535353;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: 9px;
+  width: 9px;
+  height: 7px;
+}
+
+.searchText {
+  display: none;
+}
+
+.searchIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.loginLink {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #535353;
+  text-decoration: none;
+  margin: 0 24px 0 33px;
+}
+
+.navigationDataContainer {
+  position: absolute;
+  top: 98px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.headerNavigationContainer {
+  width: max-content;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: max-content;
+}
+
+.wrapper {
+  width: 63%;
+}
+
+.quickStart {
+  background-color: #ecebeb;
+  padding: 34px 119px 34px 50px;
+  height: initial;
+  width: 37%;
+}
+
+.quickStartTitle {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 7px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 13px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.quickStartList {
+  list-style-type: none;
+  padding: 0;
+  margin: 40px 0 0 0;
+}
+
+.quickStartLisItem {
+  margin-bottom: 25px;
+}
+
+.quickStartListItemUrl {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000000;
+  cursor: pointer;
+}
+
+.navigationVideoContainer {
+  margin: 41px 216px 20px 0px;
+  padding-left: 50px;
+  border-left: 1px solid #d9d9d9;
+}
+
+.navigationVideo {
+  max-width: 360px;
+  max-height: 150px;
+}
+
+.navigationVideoTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 22px 0 8px;
+}
+
+.navigationVideoDesc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.6);
+  width: max-content;
+}
+
+.menuIconWraper {
+  display: none;
+}
+
+.mobileNavigationContainer{
+  display: none;
+}
+
+
+/* media query between 900px to 1300px screen */
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+  .headerContent {
+    padding: 2px 15px 0;
+  }
+
+  .headerLogo {
+    width: 120px;
+    height: 70px;
+  }
+
+  .listItem {
+    margin: 0 24px 0 0;
+  }
+
+  .loginContainer > *:last-child {
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .navigationItem {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .arrow {
+    margin-left: 6px;
+  }
+
+  .searchIcon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .loginLink {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 10px;
+  }
+
+  .navigationDataContainer {
+    top: 72px;
+  }
+
+  .quickStart {
+    padding: 24px;
+  }
+
+  .quickStartList {
+    margin-top: 24px;
+  }
+
+  .quickStartListItem {
+    margin-bottom: 18px;
+  }
+
+  .quickStartListItemUrl {
+    font-size: 14px;
+  }
+
+  .navigationVideoContainer {
+    margin: 24px 80px 20px 0px;
+    padding-left: 32px;
+  }
+
+  .navigationVideo {
+    max-width: 280px;
+    max-height: 120px;
+  }
+
+  .navigationVideoTitle {
+    font-size: 14px;
+    margin: 18px 0 8px;
+  }
+
+  .navigationVideoDesc {
+    font-size: 12px;
+  }
+}
+
+/* media query between 768px to 900px screen */
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .headerContent {
+    padding: 12px;
+  }
+
+  .headerLogo {
+    width: 75px;
+    height: 50px;
+  }
+
+  .listItem {
+    margin: 0 12px 0 0;
+  }
+
+  .loginContainer > *:last-child {
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .navigationItem {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .arrow {
+    width: 10px;
+    height: 8px;
+  }
+
+  .searchIcon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .loginLink {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 10px;
+  }
+
+  .navigationDataContainer {
+    top: 74px;
+  }
+}
+
+/* media query between 375px to 767px screen */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .header {
+    height: 64px;
+  }
+
+  .headerContent {
+    padding: 5px 22px 4px 6px;
+  }
+
+  .headerLogo {
+    width: 95px;
+    height: 54px;
+  }
+
+  .navigationContainer {
+    display: none;
+  }
+
+  .searchWrapper {
+    display: none;
+  }
+
+  .loginLink {
+    display: none;
+  }
+
+  .loginContainer > a:last-of-type {
+    color: #000;
+    background: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0;
+    min-width: fit-content;
+    width: fit-content;
+  }
+
+  .menuIconWraper {
+    display: block;
+    padding: 0;
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 32px;
+  }
+
+  .menuIconWraper > * {
+    width: 21px;
+    height: 17px;
+  }
+
+  .mobileNavigationContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 200;
+    width: 100%;
+    height: max-content;
+    padding: 12px 24px 32px;
+    box-sizing: border-box;
+  }
+
+  .mobileNavigationHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7px;
+  }
+
+  .mobileIcon {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobileIcon> * {
+    width: 17px;
+    height: 17px;
+  }
+
+  .mobileLogo {
+    width: 97px;
+    height: 54px;
+  }
+
+  .mobileNavigationList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobileNavigationItem{
+    font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+color: #1A1A1A;
+background: none;
+border: none;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 48px;
+  }
+
+  .mobileArrow {
+    width: 6px;
+    height: 8px;
+  }
+
+  .mobileBtnsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 91px;
+  }
+
+  .outlinedBtn {
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: borde-box;
+    font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+color: #000;
+border-radius: 3px;
+margin-top: 14px;
+  }
+
+  .mobileIconBtn {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .mobileSubMenuHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  .navigationDataContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    top: 64px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 23px 64px;
+    box-sizing: border-box;
+  }
+
+  .headerNavigationContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .quickStart {
+    padding: 20px;
+    width: calc(100% + 46px);
+    margin-left: -23px;
+  }
+
+  .navigationVideoContainer {
+    display: none;
+  }
+
+  .mobileSubNavigationBackContainer{
+    display: flex;
+    align-items: center;
+  }
+
+  .mobileSubMenuTitle {
+    margin-left: 13px;
+    font-size: 16px;
+line-height: 18px;
+color: #535353;
+  }
+
+}

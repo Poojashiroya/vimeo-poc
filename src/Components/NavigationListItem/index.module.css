@@ -1,0 +1,41 @@
+.navigationListItem {
+  display: flex;
+  align-items: center;
+  margin-top: 27px;
+}
+
+.navigationListItemImg {
+  width: 35px;
+  height: 35px;
+}
+
+.listItemContent {
+  margin-left: 19px;
+}
+
+.listItemTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.listItemDesc {
+  font-size: 14px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* media query between 375px to 767px screen */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .listItemTitle {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.listItemDesc{
+  font-size: 14px;
+  line-height: 120%;
+}
+}

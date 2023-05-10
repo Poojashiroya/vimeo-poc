@@ -3,6 +3,16 @@
   src: url("../assets/font/helvatica_neue_medium.otf");
 }
 
+@font-face {
+  font-family: "helvatica-neue-light";
+  src: url("../assets/font/HelveticaNeue-Light.otf");
+}
+
+@font-face {
+  font-family: "helvatica-medium";
+  src: url("../assets/font/helvatica_medium.otf");
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -104,6 +114,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {

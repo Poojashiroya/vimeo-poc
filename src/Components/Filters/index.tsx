@@ -1,4 +1,4 @@
-import Menu from "../Menu";
+// import Menu from "../Menu";
 
 //css
 import styles from "./index.module.css";
@@ -30,7 +30,7 @@ export default function Filters () {
       ];
     return (
         <section className={styles.filtersContainer}>
-            <Menu options={options} placeHolder="Month"/>
+            {/* <Menu options={options} placeHolder="Month"/> */}
         </section>
     )
 }

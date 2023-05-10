@@ -12,13 +12,14 @@ import LogoWall from '@/Components/LogoWall';
 import QuickStart from '@/Components/QuickStart';
 import Help from '@/Components/Help';
 import Filters from '@/Components/Filters';
+import StyledHeader from '@/Components/Header';
 
 const inter = Inter({ subsets: ['latin'] })
 
-const helvatica = localFont({
-  src: '../assets/font/helvatica_neue_medium.otf',
-  variable: '--helvatica-neue'
-})
+// const helvatica = localFont({
+//   src: '../assets/font/HelveticaNeue-Light.otf',
+//   variable: '--helvatica-neue-light'
+// })
 
 export default function Home() {
   const centerCardsData = [
@@ -69,7 +70,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={helvatica.variable}>
+      <main>
+      <StyledHeader />
         <MediaCard alignment='down' mediaTitle='Drive engagement & clicks' mediaDesc='Make your customers lean in and take action.' cardsData={centerCardsData} />
         <MediaCard alignment='left' mediaTitle='Collaborate with Ease' mediaDesc='Give and Consolidate Feedback Quickly' cardsData={centerCardsData} />
         <MediaCard alignment="right" mediaTitle="Vimeo Mobile App" mediaDesc="Work from anywhere" mediaSubDesc="Short description, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." cardsData={rightCardsData} btn1Url="#" btn2Url="#" btn1Title="Download iOS" btn2Title="Download Android" />
